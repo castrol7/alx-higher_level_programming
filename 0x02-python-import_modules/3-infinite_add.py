@@ -1,10 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+import sys
 
 if __name__ == "__main__":
-    """Print the addition of all arguments."""
-    import sys
+    args = sys.argv[1:]  # Get all command line arguments except the script name
+    result = 0
 
-    total = 0
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-    print("{}".format(total)
+    for arg in args:
+        result += int(arg)
+
+    print(result)
