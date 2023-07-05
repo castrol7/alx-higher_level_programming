@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+"""
+README.md
+"""
+
+def get_object_type(obj):
+    """
+    Returns the type of an object.
+    """
+    return type(obj)
+
+def get_variable_identifier(obj):
+    """
+    Returns the memory address or identifier of an object in CPython.
+    """
+    return id(obj)
